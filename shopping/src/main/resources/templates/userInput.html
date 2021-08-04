@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--  getting user input from the form ,
+create and th: object attribut
+and action attribute
+and a post method
+
+-->
+<form th:object=${newMessage} th:action="@{/userInput}"  method="POST">
+    <input  th:field="*{text}" type="text">
+    <input type="submit">
+
+</form>
+
+<h3 th:each = "msg: ${greetings}"
+    th:text = "${msg}"
+
+    th:unless = "${msg.contains('hi')}"></h3>
+
+</body>
+</html>

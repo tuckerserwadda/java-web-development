@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>online shopping</title>
+</head>
+<body>
+<h1>my home page</h1>
+<!-- add the thymeleaf attribute to get data from the controller  -->
+<h2 th:text = "${hello}"></h2>
+<!-- this loops through an array created in the controller-->
+<h3 th:each = "msg: ${greetings}"
+    th:text = "${msg}"
+
+    th:unless = "${msg.contains('hi')}"></h3>
+<!--    using conditional rendering .. display the msg if it it is not equal to hi-->
+
+</body>
+</html>
