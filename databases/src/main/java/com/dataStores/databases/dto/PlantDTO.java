@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 /**
  * the DTo class helps to limit what we send to the clients
  * this we will send only the name of the plant and its price.
- * 
+ *
  */
 public class PlantDTO {
     private String name;
